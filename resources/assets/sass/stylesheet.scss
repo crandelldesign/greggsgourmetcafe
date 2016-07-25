@@ -32,6 +32,9 @@ body {
 .content {
     padding: 15px;
 }
+.logo {
+    max-width: 360px;
+}
 
 /* Footer */
 .footer {
@@ -90,6 +93,11 @@ h2 {
 }
 h3 {
     color: $englishholly;
+}
+a {
+    &:hover, &.hover, &:focus {
+        color: $link-hover-color;
+    }
 }
 
 /* Buttons */

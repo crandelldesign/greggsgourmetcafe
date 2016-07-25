@@ -7938,6 +7938,9 @@ body {
 .content {
   padding: 15px; }
 
+.logo {
+  max-width: 360px; }
+
 /* Footer */
 .footer {
   background-color: #000000;
@@ -7986,6 +7989,9 @@ h2 {
 
 h3 {
   color: #043011; }
+
+a:hover, a.hover, a:focus {
+  color: #A00008; }
 
 /* Buttons */
 .btn-greenpea {

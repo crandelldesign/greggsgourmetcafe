@@ -8,6 +8,10 @@
         <div class="page">
             <div class="content container-fluid">
 
+                <div class="logo-container">
+                    <img src="{{url('/img/greggs-gourmet-cafe-logo.jpg')}}" class="img-responsive logo center-block">
+                </div>
+
                 <div class="row">
                     <div class="col-sm-6">
                         <h1>Color Palette</h1>
