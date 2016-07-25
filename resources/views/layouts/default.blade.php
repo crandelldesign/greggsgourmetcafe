@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         @include('layouts.head')
-        {!! Analytics::render() !!}
     </head>
     <body>
         @include('layouts.header')
@@ -14,7 +13,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
+        <script type="text/javascript" src="{{ url('/js/default.js') }}"></script>
         @include('layouts.footer')
         @yield('scripts')
     </body>

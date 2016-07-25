@@ -25,10 +25,10 @@ elixir(function(mix) {
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/*.js', 'resources/assets/js/bootstrap');
     mix.scripts(
 		[
-	        'jquery-2.2.0.min.js',
+	        'jquery-2.2.4.min.js',
 	        'bootstrap/bootstrap.js'
 		],
-		'public/js/master.js'
+		'public/js/default.js'
     );
 	mix.copy('node_modules/bootstrap-sass/assets/fonts', 'public/fonts/bootstrap');
 	mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
