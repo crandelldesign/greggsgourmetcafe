@@ -1,14 +1,38 @@
-/* Fonts */
+// Standard Shadows
+$z1-shadow: 0  1px  3px rgba(#000, 0.12), 0  1px  2px rgba(#000, 0.24);
+$z2-shadow: 0  3px  6px rgba(#000, 0.16), 0  3px  6px rgba(#000, 0.23);
+$z3-shadow: 0 10px 20px rgba(#000, 0.19), 0  6px  6px rgba(#000, 0.23);
+$z4-shadow: 0 14px 28px rgba(#000, 0.25), 0 10px 10px rgba(#000, 0.22);
+$z5-shadow: 0 19px 38px rgba(#000, 0.30), 0 15px 12px rgba(#000, 0.22);
+
+// Top shadows (for "bottom" positionned elements)
+$top-z1-shadow: 0  -1px  3px rgba(#000, 0.12), 0  -1px  2px rgba(#000, 0.24);
+$top-z2-shadow: 0  -3px  6px rgba(#000, 0.16), 0  -3px  6px rgba(#000, 0.23);
+$top-z3-shadow: 0 -10px 20px rgba(#000, 0.19), 0  -6px  6px rgba(#000, 0.23);
+$top-z4-shadow: 0 -14px 28px rgba(#000, 0.25), 0 -10px 10px rgba(#000, 0.22);
+$top-z5-shadow: 0 -19px 38px rgba(#000, 0.30), 0 -15px 12px rgba(#000, 0.22);
+
+// Shadows for full size "side" elements (using spread to make corners look right)
+$side-z1-shadow: 0 0  3px 0.75px rgba(#000, 0.12), 0 0  2px 0.5px rgba(#000, 0.24);
+$side-z2-shadow: 0 0  6px  1.5px rgba(#000, 0.16), 0 0  6px 1.5px rgba(#000, 0.23);
+$side-z3-shadow: 0 0 20px    5px rgba(#000, 0.19), 0 0  6px 1.5px rgba(#000, 0.23);
+$side-z4-shadow: 0 0 28px    7px rgba(#000, 0.25), 0 0 10px 2.5px rgba(#000, 0.22);
+$side-z5-shadow: 0 0 38px  9.5px rgba(#000, 0.30), 0 0 12px   3px rgba(#000, 0.22);
+
+/* Typography */
+/*$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'EB Garamond', serif;*/
+$font-size-h1: 40px;
 
 /* Colors */
-$black: #252525;
-$magenta: #8a175a;
-$red: #990033;
-$darkred: #5e3e4a;
-$green: #4f7e12;
-$pink: #FCF;
+$black: #000000;
+$crimson: #ED2D38;
+$greenpea: #245E36;
+$blue: #0000F9;
+$sangria: #A00008;
+$englishholly: #043011;
 
-/* Font Weights */
-$light: 300;
-$regular: 400;
-$bold: 500;
+/* Link Colors */
+$link-color: $crimson;
+$link-hover-color: $sangria;
+$link-hover-decoration: none;

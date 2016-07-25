@@ -12,3 +12,7 @@
 */
 
 $app->get('/', 'HomeController@getIndex');
+
+$app->get('/style', function () {
+    return view('style');
+});;

@@ -1,8 +1,18 @@
 @charset "UTF-8";
 /*
-Theme Name: Facials By Jude 2016
+Theme Name: Gregg's Gourmet Cafe 2016
 Author: Matt Crandell
 */
+/* Variables */
+/* Typography */
+/*$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'EB Garamond', serif;*/
+/* Colors */
+/* Link Colors */
+/* Mixins */
+/* Mixins */
+/* Shadows */
+/* Page Size */
 /* Bootstrap */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -1071,11 +1081,11 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
+  color: #ED2D38;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #23527c;
-    text-decoration: underline; }
+    color: #A00008;
+    text-decoration: none; }
   a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -1193,7 +1203,7 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 40px; }
 
 h2, .h2 {
   font-size: 30px; }
@@ -3038,7 +3048,7 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #337ab7;
+  color: #ED2D38;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
@@ -3048,8 +3058,8 @@ fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #23527c;
-    text-decoration: underline;
+    color: #A00008;
+    text-decoration: none;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
@@ -3541,7 +3551,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #337ab7; }
+    border-color: #ED2D38; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -4059,7 +4069,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #337ab7;
+      color: #ED2D38;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -4076,7 +4086,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
-    color: #23527c;
+    color: #A00008;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4244,7 +4254,7 @@ a.label:hover, a.label:focus {
     padding: 1px 5px; }
   .list-group-item.active > .badge,
   .nav-pills > .active > a > .badge {
-    color: #337ab7;
+    color: #ED2D38;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4315,7 +4325,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7; }
+  border-color: #ED2D38; }
 
 .alert {
   padding: 15px;
@@ -7909,11 +7919,93 @@ button.close {
   overflow: visible;
   clip: auto; }
 
-/* Variables */
-/* Fonts */
-/* Colors */
-/* Font Weights */
-/* Mixins */
-/* Mixins */
+/* Body Styles */
+body {
+  background-color: #ED2D38;
+  margin: 15px 0; }
+
+.page {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FFF;
+  border: 2px #000000 solid;
+  border-radius: 10px; }
+  @media (min-width: 1300px) {
+    .page {
+      margin: 0 30px; } }
+
+.content {
+  padding: 15px; }
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  font-size: 10px; }
+  .footer > .container-fluid {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px; }
+  .footer p {
+    margin-bottom: 2px; }
+
+/* Color Swatches */
+.color-swatch {
+  height: 100px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  background-color: #eee; }
+  .color-swatch.swatch1 {
+    background-color: #ED2D38; }
+  .color-swatch.swatch2 {
+    background-color: #245E36; }
+  .color-swatch.swatch3 {
+    background-color: #000000; }
+  .color-swatch.swatch4 {
+    background-color: #0000F9; }
+  .color-swatch.swatch5 {
+    background-color: #A00008; }
+  .color-swatch.swatch6 {
+    background-color: #043011; }
+
+.details {
+  color: #666; }
+
+/* Typography */
+h1 {
+  color: #245E36; }
+
+h2 {
+  color: #A00008; }
+
+h3 {
+  color: #043011; }
+
+/* Buttons */
+.btn-greenpea {
+  background-color: #245E36;
+  color: #FFF;
+  border: 1px solid #FFF; }
+  .btn-greenpea:hover {
+    background-color: #2b7041;
+    color: #FFF; }
+  .btn-greenpea:focus {
+    color: #FFF; }
+
+.btn-sangria {
+  background-color: #A00008;
+  color: #FFF;
+  border: 1px solid #FFF; }
+  .btn-sangria:hover {
+    background-color: #ba0009;
+    color: #FFF; }
+  .btn-sangria:focus {
+    color: #FFF; }
 
 /*# sourceMappingURL=stylesheet.css.map */

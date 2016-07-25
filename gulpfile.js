@@ -30,7 +30,7 @@ elixir(function(mix) {
 		],
 		'public/js/default.js'
     );
-	mix.copy('node_modules/bootstrap-sass/assets/fonts', 'public/fonts/bootstrap');
+	mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');
 	mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 	mix.copy('resources/assets/fonts', 'public/fonts');
 });

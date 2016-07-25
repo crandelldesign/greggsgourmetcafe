@@ -5,16 +5,16 @@
         @include('layouts.head')
     </head>
     <body>
+        @include('layouts.nav')
         @include('layouts.header')
-        <div class="container-fluid page">
-            @include('layouts.nav')
-            <div class="content">
+        <div class="page">
+            <div class="content container-fluid">
                 @yield('content')
             </div>
         </div>
 
-        <script type="text/javascript" src="{{ url('/js/default.js') }}"></script>
         @include('layouts.footer')
+        <script type="text/javascript" src="{{ url('/js/default.js') }}"></script>
         @yield('scripts')
     </body>
     
