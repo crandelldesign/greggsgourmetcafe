@@ -12,6 +12,7 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+    // Copy and Compile Sass
     mix.sass(
 		'stylesheet.scss',
 		'public/css/stylesheet.css',
@@ -22,15 +23,20 @@ elixir(function(mix) {
 	        ],
       	}
     );
+    // Copy and Compile JS
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/*.js', 'resources/assets/js/bootstrap');
     mix.scripts(
 		[
-	        'jquery-2.2.4.min.js',
+	        'jquery-3.1.0.min.js',
 	        'bootstrap/bootstrap.js'
 		],
 		'public/js/default.js'
     );
+    // Copy Fonts
 	mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');
 	mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
-	mix.copy('resources/assets/fonts', 'public/fonts');
+    // Copy Slick's CSS and JS
+    mix.copy('node_modules/slick-carousel/slick/slick.css', 'public/css/slick');
+    mix.copy('node_modules/slick-carousel/slick/slick.js', 'resources/assets/js/slick');
+    mix.copy('node_modules/slick-carousel/slick/slick.js', 'public/js/slick');
 });

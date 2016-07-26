@@ -25,7 +25,7 @@ body {
     background-color: #FFF;
     border: 2px #000000 solid;
     border-radius: 10px;
-    @media (min-width: 1300px) {
+    @media (max-width: 1300px) {
         margin: 0 30px;
     }
 }
@@ -34,6 +34,35 @@ body {
 }
 .logo {
     max-width: 360px;
+}
+
+/* Navbar */
+nav.navbar {
+	border: 0;
+	@include page-width();
+	padding: 0 15px;
+	margin-bottom: -2px;
+	.nav {
+		border-bottom: 0;
+		list-style: none;
+		text-align: center;
+		li {
+			display: inline-block;
+			a {
+				background-color: #FFF;
+				margin: 0 5px;
+				font-size: 20px;
+				color: $black;
+				border: 2px solid $black;
+			    width: 175px;
+			    border-top-left-radius: 10px;
+    			border-top-right-radius: 10px;
+			}
+			&.active a {
+			    border-bottom: 2px solid #FFF;
+			}
+		}
+	}
 }
 
 /* Footer */

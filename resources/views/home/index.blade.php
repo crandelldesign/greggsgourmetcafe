@@ -11,6 +11,7 @@
 @stop
 
 @section('scripts')
+<script type="text/javascript" src="{{ url('/js/slick/slick.js') }}"></script>
 <script>
     $(document).ready(function()
     {

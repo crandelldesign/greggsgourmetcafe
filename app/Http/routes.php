@@ -12,6 +12,7 @@
 */
 
 $app->get('/', 'HomeController@getIndex');
+$app->get('/carryout-menu', 'HomeController@getCarryoutMenu');
 
 $app->get('/style', function () {
     return view('style');

@@ -13,4 +13,13 @@ class HomeController extends Controller
         $view->description = "";
     	return $view;
     }
+
+    public function getCarryoutMenu()
+    {
+        $view = view('home.index');
+        $view->title = "Welcome";
+        $view->description = "";
+        $view->active_page = 'carryout';
+        return $view;
+    }
 }

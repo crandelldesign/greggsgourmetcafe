@@ -11,11 +11,11 @@
             <div class="content container-fluid">
                 @yield('content')
             </div>
+            @include('layouts.footer')
         </div>
-
-        @include('layouts.footer')
         <script type="text/javascript" src="{{ url('/js/default.js') }}"></script>
         @yield('scripts')
+
     </body>
     
 </html>

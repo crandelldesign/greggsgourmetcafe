@@ -9,14 +9,15 @@ Author: Matt Crandell
 $font-family-serif: 'EB Garamond', serif;*/
 /* Colors */
 /* Link Colors */
+/* Navbar */
 /* Mixins */
 /* Mixins */
 /* Shadows */
 /* Page Size */
 /* Bootstrap */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1087,7 +1088,6 @@ a {
     color: #A00008;
     text-decoration: none; }
   a:focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
@@ -2299,7 +2299,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2804,7 +2803,6 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
@@ -3644,7 +3642,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -7931,7 +7929,7 @@ body {
   background-color: #FFF;
   border: 2px #000000 solid;
   border-radius: 10px; }
-  @media (min-width: 1300px) {
+  @media (max-width: 1300px) {
     .page {
       margin: 0 30px; } }
 
@@ -7940,6 +7938,32 @@ body {
 
 .logo {
   max-width: 360px; }
+
+/* Navbar */
+nav.navbar {
+  border: 0;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  margin-bottom: -2px; }
+  nav.navbar .nav {
+    border-bottom: 0;
+    list-style: none;
+    text-align: center; }
+    nav.navbar .nav li {
+      display: inline-block; }
+      nav.navbar .nav li a {
+        background-color: #FFF;
+        margin: 0 5px;
+        font-size: 20px;
+        color: #000000;
+        border: 2px solid #000000;
+        width: 175px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+      nav.navbar .nav li.active a {
+        border-bottom: 2px solid #FFF; }
 
 /* Footer */
 .footer {
