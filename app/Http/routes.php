@@ -13,6 +13,8 @@
 
 $app->get('/', 'HomeController@getIndex');
 $app->get('/carryout-menu', 'HomeController@getCarryoutMenu');
+$app->get('/catering-menu', 'HomeController@getCateringMenu');
+$app->get('/specials', 'HomeController@getSpecials');
 
 $app->get('/style', function () {
     return view('style');

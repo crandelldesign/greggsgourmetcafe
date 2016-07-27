@@ -21,19 +21,28 @@ body {
     margin: 15px 0;
 }
 .page {
-    @include page-width();
+    
     background-color: #FFF;
-    border: 2px #000000 solid;
-    border-radius: 10px;
-    @media (max-width: 1300px) {
-        margin: 0 30px;
+    border-top: 2px #000000 solid;
+    border-bottom: 2px #000000 solid;
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+        @include page-width();
+        border: 2px #000000 solid;
+        border-radius: 10px;
+        &.home {
+            font-size: 16px;
+        }
     }
-    &.home {
-        font-size: 16px;
+    @media (min-width: $screen-sm-min) and (max-width: 1300px) {
+        margin: 0 30px;
     }
 }
 .content {
     padding: 15px;
+    @media (min-width: $screen-sm-min) {
+        padding: 20px;
+    }
 }
 .logo-container {
     max-width: 360px;
@@ -46,8 +55,9 @@ body {
 nav.navbar {
 	border: 0;
 	@include page-width();
-	padding: 0 15px;
+	//padding: 0 15px;
 	margin-bottom: -2px;
+    min-height: 0;
 	.nav {
 		border-bottom: 0;
 		list-style: none;
@@ -56,11 +66,14 @@ nav.navbar {
 			display: inline-block;
 			a {
 				background-color: #FFF;
-				margin: 0 5px;
-				font-size: 20px;
+				font-size: 12px;
 				color: $black;
 				border: 2px solid $black;
-			    width: 175px;
+                @media (min-width: $screen-sm-min) {
+                    font-size: 20px;
+    			    width: 175px;
+                    margin: 0 5px;
+                }
 			    border-top-left-radius: 10px;
     			border-top-right-radius: 10px;
 			}
@@ -71,13 +84,23 @@ nav.navbar {
 	}
 }
 
+/* Sidebar */
+.sidebar {
+    .logo-container {
+        max-width: 300px;
+        margin: 0 auto 25px auto;
+    }
+}
+
 /* Footer */
 .footer {
     background-color: $black;
     color: #FFF;
-    border-radius: 0 0 8px 8px;
     text-align: center;
     font-size: 10px;
+    @media (min-width: $screen-sm-min) {
+        border-radius: 0 0 8px 8px;
+    }
     > .container-fluid {
         @include page-width();
         padding: 15px;
@@ -161,6 +184,24 @@ a {
     }
 }
 
+/* Spacing Elements */
+@mixin generate-spacing-classes(
+    $default-space-amounts-with-direction: (0 left left, 5 left left, 10 left left, 15 left left, 25 left left, 30 left left)
+) {
+    @each $space in $default-space-amounts-with-direction {
+        .margin-#{nth($space, 3)}-#{nth($space, 1)} {
+            margin-#{nth($space, 2)}: #{nth($space, 1)}px;
+        }
+    }
+}
+$right-space-vars: (0 right right, 5 right right, 10 right right, 15 right right, 25 right right, 30 right right);
+$bottom-space-vars: (0 bottom bottom, 5 bottom bottom, 10 bottom bottom, 15 bottom bottom, 25 bottom bottom, 30 bottom bottom);
+$top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 top top);
+@include generate-spacing-classes(); // left comes by default
+@include generate-spacing-classes($right-space-vars);
+@include generate-spacing-classes($bottom-space-vars);
+@include generate-spacing-classes($top-space-vars);
+
 /* Slideshow */
 .slideshow {
     max-width: 800px;
@@ -213,11 +254,16 @@ a {
 
 /* Menu */
 .menu-cat {
+    font-size: 11px;
+    @media (min-width: 350px) {
+        font-size: 12px;
+    }
+    @media (min-width: $screen-sm-min) {
+        font-size: 14px;
+    }
     margin-bottom: 25px;
     ul {
         list-style-type: none;
-        width: 95%;
-        margin-left: 1%;
         padding-left: 0;
         margin-top: 10px;
         margin-bottom: 0;
@@ -239,7 +285,8 @@ a {
                 color: #000;
                 padding-left: 8px;
                 font-weight: bold;
-                height: 19px;
+                min-height: 19px;
+                line-height: $line-height-base;
             }
             div {
                 float: right;
@@ -253,14 +300,11 @@ a {
                 margin-right: 5px;
                 padding-top: 3px;
                 margin-bottom: 0;
-                font-size: 14px;
+                /*font-size: 14px;*/
             }
         }
     }
     table {
-        border-collapse: collapse;
-        width: 95%;
-        margin-left: 1%;
         tr {
             //border-bottom: 1px #ddd solid;
             &:first-child {
@@ -286,21 +330,53 @@ a {
                 border-top: 0;
             }
             &.desc th {
-                padding-left: 16px;
+                //padding-left: 16px;
             }
             &.desc td {
                 //padding-left: 5px;
                 //padding-right: 5px;
                 padding-top: 3px;
                 padding-left: 16px;
-                font-size: 14px;
+                /*font-size: 14px;*/
                 &:first-child {
                     text-align: left;
+                }
+            }
+            &.border-top-0 {
+                th, td {
+                    border-top: 0;
                 }
             }
         }
     }
     p:last-child {
         margin-bottom: 0;
+    }
+}
+table.coupon {
+    border-spacing: 10px;
+    width: 100%;
+    border-collapse: separate;
+    td {
+        max-width: 330px;
+        padding: 10px;
+        border: 2px #000000 dashed;
+        margin: 10px;
+        background-color: #245e36;
+        color: #FFFFFF;
+        text-align: center;
+        width: 50%;
+        h3 {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #FFF;
+        }
+        h3, p {
+            margin-top: 0;
+            margin-bottom: 3px;
+        }
+        .price {
+            font-size: 20px;
+        }
     }
 }

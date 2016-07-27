@@ -5,6 +5,8 @@
 
 @section('content')
 
+<h1>Carryout Menu</h1>
+
 <div id="classicpizza" class="menu-cat">
     <h2>Classic Pizza</h2>
     <table class="table">
@@ -52,8 +54,7 @@
         </li>
         <li>
             <h3>California</h3>
-            <p><span style="font-size: 13px;">Pesto Sauce, Mushrooms, Feta Cheese, Sliced Red Onion, Artichoke Hearts</span>
-            </p>
+            <p>Pesto Sauce, Mushrooms, Feta Cheese, Sliced Red Onion, Artichoke Hearts</p>
         </li>
         <li>
             <h3>Chicken Alfredo</h3>
@@ -192,8 +193,8 @@
             <h3>Roasted Red Skin Potatoes</h3>
             <div>$3.99</div>
         </li>
-        <p>
-            <!--
+        <!--<p>
+            
 <li>
 
 <h3>Rice Pilaf</h3>
@@ -204,8 +205,8 @@
 
 </li>
 
--->
-        </p>
+
+        </p>-->
         <li>
             <h3>Dip</h3>
             <div>$1.49</div>

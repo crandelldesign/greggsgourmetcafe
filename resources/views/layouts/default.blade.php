@@ -9,7 +9,14 @@
         @include('layouts.header')
         <div class="page">
             <div class="content container-fluid">
-                @yield('content')
+                <div class="row">
+                    <div class="col-sm-3">
+                        @include('layouts.sidebar')
+                    </div>
+                    <div class="col-sm-9">
+                        @yield('content')
+                    </div>
+                </div>
             </div>
             @include('layouts.footer')
         </div>
