@@ -8158,7 +8158,7 @@ a:hover, a.hover, a:focus {
       color: #FFF;
       border-radius: 50%; }
     .slideshow .slideshow-prev:hover .fa.fa-circle, .slideshow .slideshow-next:hover .fa.fa-circle {
-      background-color: #000;
+      background-color: #ED2D38;
       transition: background-color 1s linear; }
   .slideshow .slideshow-prev {
     left: 0; }

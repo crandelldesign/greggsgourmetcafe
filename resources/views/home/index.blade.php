@@ -18,14 +18,13 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="slideshow">
-                            <!--<div class="item"><img srcset="{{url('/img/slideshow/slideshow1@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Gregg's Gourmet Cafe Pizza" class="img-responsive center-block"></div>-->
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Gregg's Gourmet Cafe Pizza" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow2.jpg')}}" alt="Gregg's Gourmet Cafe Salad" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow3.jpg')}}" alt="Gregg's Gourmet Cafe Breadsticks" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow4.jpg')}}" alt="Gregg's Gourmet Cafe Pizza" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow5.jpg')}}" alt="Gregg's Gourmet Cafe Chicken and Ribs" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow6.jpg')}}" alt="Gregg's Gourmet Cafe Pizza and Breadsticks" class="img-responsive center-block"></div>
-                            <div class="item"><img src="{{url('/img/slideshow/slideshow7.jpg')}}" alt="Gregg's Gourmet Cafe of Waterford Choir" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow1@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow1.jpg')}}" alt="Gregg's Gourmet Cafe Pizza" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow2@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow2.jpg')}}" alt="Gregg's Gourmet Cafe Salad" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow3@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow3.jpg')}}" alt="Gregg's Gourmet Cafe Breadsticks" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow4@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow4.jpg')}}" alt="Gregg's Gourmet Cafe Pizza" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow5@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow5.jpg')}}" alt="Gregg's Gourmet Cafe Chicken and Ribs" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow6@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow6.jpg')}}" alt="Gregg's Gourmet Cafe Pizza and Breadsticks" class="img-responsive center-block"></div>
+                            <div class="item"><img srcset="{{url('/img/slideshow/slideshow7@2x.jpg')}} 2x" src="{{url('/img/slideshow/slideshow7.jpg')}}" alt="Gregg's Gourmet Cafe of Waterford Choir" class="img-responsive center-block"></div>
                         </div>
                         <div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
                             <div class="col-sm-5">
