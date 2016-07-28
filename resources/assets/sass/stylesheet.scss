@@ -208,6 +208,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
     max-height: 300px;
     overflow: hidden;
     margin: 0 auto 20px auto;
+    border: 2px solid $crimson;
     .slideshow-prev, .slideshow-next {
         /*font-size: 20px;*/
         position: absolute;
@@ -227,7 +228,7 @@ $top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 25 top top, 30 t
 
         }
         &:hover .fa.fa-circle {
-            background-color: #000;
+            background-color: $crimson;
             -webkit-transition: background-color 1s linear;
             -moz-transition: background-color 1s linear;
             -o-transition: background-color 1s linear;
@@ -358,11 +359,11 @@ table.coupon {
     width: 100%;
     border-collapse: separate;
     td {
-        max-width: 330px;
+        width: 50%;
         padding: 10px;
         border: 2px #000000 dashed;
         margin: 10px;
-        background-color: #245e36;
+        background-color: $greenpea;
         color: #FFFFFF;
         text-align: center;
         width: 50%;
