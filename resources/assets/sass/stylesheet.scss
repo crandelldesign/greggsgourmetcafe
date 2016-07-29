@@ -145,6 +145,12 @@ nav.navbar {
 /* Typography */
 h1 {
     color: $greenpea;
+    &.homepage-header {
+    	font-size: 16px;
+    	color: $black;
+    	margin-top: 8px;
+    	margin-bottom: 18px;
+    }
 }
 h2 {
     color: $sangria;

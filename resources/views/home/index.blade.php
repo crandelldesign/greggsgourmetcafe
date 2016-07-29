@@ -28,7 +28,7 @@
                         </div>
                         <div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
                             <div class="col-sm-5">
-                                <p itemprop="name"><strong>Gregg's Gourmet Cafe</strong></p>
+                                <h1 class="homepage-header" itemprop="name"><strong>Gregg's Gourmet Cafe</strong></h1>
                                 <address>
                                     <div itemprop="address" typeof="PostalAddress">
                                         <p><a href="tel:+12486256612"><strong>248-625-6612</strong></a></p>
