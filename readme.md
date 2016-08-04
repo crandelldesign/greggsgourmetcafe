@@ -1,6 +1,6 @@
 ## Gregg's Gourmet Cafe
 
-Website for Gregg's Gourmet Cafe built using Lumen 5.1.
+Website for Gregg's Gourmet Cafe built using Lumen 5.2.
 
 ## Official Documentation
 
