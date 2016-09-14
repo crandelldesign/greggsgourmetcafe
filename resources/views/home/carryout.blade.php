@@ -322,6 +322,10 @@
             <h3>Beef &amp; Cheddar</h3>
             <p>Sliced Roast Beef with Cheddar Cheese</p>
         </li>
+        <li>
+            <h3>Philly Cheese Steak</h3>
+            <p>Sliced Roast Beef with Swiss Cheese, Mushroom, Onion</p>
+        </li>
     </ul>
     <p>Regular:&nbsp;<strong>$6.99</strong> &nbsp; &nbsp;&nbsp;Large:&nbsp;<strong>$9.99</strong>
     </p>
