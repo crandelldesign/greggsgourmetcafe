@@ -53,13 +53,13 @@
                                             <td>Tuesday</td>
                                             <td>10:30am to 9:00pm</td>
                                         </tr>
-                                        <tr itemprop="openingHours" content="We 10:30-22:00">
+                                        <tr itemprop="openingHours" content="We 10:30-21:00">
                                             <td>Wednesday</td>
-                                            <td>10:30am to 10:00pm</td>
+                                            <td>10:30am to 9:00pm</td>
                                         </tr>
-                                        <tr itemprop="openingHours" content="Th 10:30-22:00">
+                                        <tr itemprop="openingHours" content="Th 10:30-212:00">
                                             <td>Thursday</td>
-                                            <td>10:30am to 10:00pm</td>
+                                            <td>10:30am to 9:00pm</td>
                                         </tr>
                                         <tr itemprop="openingHours" content="Fr 10:30-22:00">
                                             <td>Friday</td>
@@ -69,9 +69,9 @@
                                             <td>Saturday</td>
                                             <td>10:30am to 10:00pm</td>
                                         </tr>
-                                        <tr itemprop="openingHours" content="Su 12:00-21:00">
+                                        <tr itemprop="openingHours" content="Su 12:00-20:00">
                                             <td>Sunday</td>
-                                            <td>12:00pm to 9:00pm</td>
+                                            <td>12:00pm to 8:00pm</td>
                                         </tr>
                                     </tbody>
                                 </table>
