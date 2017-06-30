@@ -162,6 +162,9 @@ a {
     &:hover, &.hover, &:focus {
         color: $link-hover-color;
     }
+    &[href^="tel"] {
+        white-space: nowrap;
+    }
 }
 
 /* Buttons */
