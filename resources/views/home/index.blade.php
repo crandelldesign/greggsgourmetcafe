@@ -11,7 +11,7 @@
             <div class="content container-fluid">
 
                 <div class="alert alert-info">
-                    <p class="lead">Gregg's Gourmet Cafe will be closed indefinitely due to smoke damage. Please call E.G. Nick's at <a href="tel:18106646200">810-664-6200</a> for your catoring needs! Thank you for your continued patronage.</p>
+                    <p class="lead">Gregg's Gourmet Cafe will be closed indefinitely due to smoke damage. Please call E.G. Nick's at <a href="tel:18106646200">810-664-6200</a> for your <strong>catoring</strong> needs! Thank you for your continued patronage and look forward to our reopening in Fall 2017.</p>
                 </div>
 
                 <div class="row">
