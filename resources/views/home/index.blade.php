@@ -10,7 +10,7 @@
         <div class="page home">
             <div class="content container-fluid">
 
-                @if(strtotime('2017-12-11') => strtotime('now'))
+                @if(strtotime('2017-12-11') >= strtotime('now'))
 
                 <div class="alert alert-info">
                     <p class="lead">Gregg's Gourmet Cafe will be reopening on Monday, December 11th, 2017. In the meantime, please call E.G. Nick's at <a href="tel:18106646200">810-664-6200</a> for your <strong>catoring</strong> needs! Thank you for your continued patronage .</p>
