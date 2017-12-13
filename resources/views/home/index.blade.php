@@ -10,14 +10,6 @@
         <div class="page home">
             <div class="content container-fluid">
 
-                @if(strtotime('2017-12-11') >= strtotime('now'))
-
-                <div class="alert alert-info">
-                    <p class="lead">Gregg's Gourmet Cafe will be reopening on Monday, December 11th, 2017. In the meantime, please call E.G. Nick's at <a href="tel:18106646200">810-664-6200</a> for your <strong>catoring</strong> needs! Thank you for your continued patronage .</p>
-                </div>
-
-                @endif
-
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="logo-container center-block margin-bottom-25">
@@ -39,8 +31,7 @@
                                 <h1 class="homepage-header" itemprop="name"><strong>Gregg's Gourmet Cafe</strong></h1>
                                 <address>
                                     <div itemprop="address" typeof="PostalAddress">
-                                        <!--<p><a href="tel:+12486256612"><strong>248-625-6612</strong></a></p>-->
-                                        <p>Call E.G. Nick's at <strong><a href="tel:18106646200">810-664-6200</a></strong>
+                                        <p><a href="tel:+12486256612"><strong>248-625-6612</strong></a></p>
                                         <p><span itemprop="streetAddress">5914 S. Main Street (M-15)</span><br>
                                             <span itemprop="addressLocality">Clarkston</span>, <span itemprop="addressRegion">Michigan</span> <span itemprop="postalCode">48346</span></p>
                                     </div>

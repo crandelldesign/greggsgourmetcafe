@@ -6,8 +6,7 @@
     <div class="address">
         <address>
             <div itemprop="address" typeof="PostalAddress">
-                <!--<p><a href="tel:+12486256612"><strong>248-625-6612</strong></a></p>-->
-                <p>Call E.G. Nick's at <strong><a href="tel:18106646200">810-664-6200</a></strong></p>
+                <p><a href="tel:+12486256612"><strong>248-625-6612</strong></a></p>
                 <p><span itemprop="streetAddress">5914 S. Main Street (M-15)</span><br>
                     <span itemprop="addressLocality">Clarkston</span>, <span itemprop="addressRegion">Michigan</span> <span itemprop="postalCode">48346</span></p>
             </div>
