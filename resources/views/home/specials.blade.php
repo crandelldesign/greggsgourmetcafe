@@ -30,7 +30,7 @@
                 <h3>Wings</h3>
                 <p>100 Chicken Wings</p>
                 <p>BBQ – Lemon Pepper – Hot</p>
-                <p><span class="price">$100</span>&nbsp;+ tax</p>
+                <p><span class="price">$125</span>&nbsp;+ tax</p>
             </td>
             <td class="coupon">
                 <h3>Pasta</h3>
@@ -52,7 +52,7 @@
         </tr>
         <tr>
             <td class="coupon">
-                <h3>$250 Party Special</h3>
+                <h3>$300 Party Special</h3>
                 <p>100 Pieces of Chicken</p>
                 <p><strong>— or —</strong>
                 </p>
@@ -67,7 +67,7 @@
                 <p>Large Pizza – 3 Toppings</p>
                 <p>Regular Greek Salad</p>
                 <p>1 Bag of Bread + 1 Cheese Dip</p>
-                <p><span class="price">$22</span>&nbsp;+ tax</p>
+                <p><span class="price">$24</span>&nbsp;+ tax</p>
             </td>
         </tr>
     </tbody>
