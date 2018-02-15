@@ -17,7 +17,7 @@
         </li>
         <li>
             <h3>Sub Special</h3>
-            <div>$5.99</div>
+            <div>$7.99</div>
             <p>Any regular sub, regular drink, and a bag of chips.</p>
         </li>
     </ul>
