@@ -1,0 +1,38 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// Gregg's Colors
+$crimson: #ED2D38;
+$greenpea: #245e36;
+$blue: #0000f9;
+$sangria: #a00008;
+$englishholly: #043011;
+
+$primary:       $crimson;
+$secondary:     $greenpea;
+$success:       #28a745;
+$info:          $blue;
+$warning:       #ffc107;
+$danger:        $sangria;
+$light:         #f8f9fa;
+$dark:          #343a40;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
