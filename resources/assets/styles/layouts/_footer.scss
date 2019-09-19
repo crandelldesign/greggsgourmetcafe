@@ -1,0 +1,13 @@
+footer.footer {
+    background-color: $dark;
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        p {
+            text-align: center;
+            color: #FFF;
+            font-size: 0.875rem; // 14px
+            margin-bottom: 0.125rem; // 2px
+        }
+    }
+}

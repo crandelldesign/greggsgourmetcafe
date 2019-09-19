@@ -4,18 +4,18 @@
 // Gregg's Colors
 $crimson: #ED2D38;
 $greenpea: #245e36;
+$space-cadet: #173753;
+$little-boy-blue: #6DAEDB;
 $blue: #0000f9;
-$sangria: #a00008;
-$englishholly: #043011;
 
 $primary:       $crimson;
 $secondary:     $greenpea;
 $success:       #28a745;
-$info:          $blue;
-$warning:       #ffc107;
-$danger:        $sangria;
-$light:         #f8f9fa;
-$dark:          #343a40;
+$info:          $little-boy-blue;
+$warning:       #FFC914;
+$danger:        $crimson;
+$light:         #e7ebed;
+$dark:          #020508;
 
 $theme-colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -23,6 +23,7 @@ $theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
+    "tertiary":   $space-cadet,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
@@ -34,5 +35,16 @@ $theme-colors: map-merge(
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
-$navbar-dark-toggler-icon-bg: none;
-$navbar-light-toggler-icon-bg: none;
+//$navbar-dark-toggler-icon-bg: none;
+//$navbar-light-toggler-icon-bg: none;
+$navbar-light-color: $dark;
+$navbar-light-toggler-border-color: $dark;
+// Navbar Height
+$navbar-height: 220px;
+
+// Typography
+$font-family-sans-serif: "Trebuchet MS", Helvetica, sans-serif;
+$headings-font-family: 'Fira Sans', "Trebuchet MS", Helvetica, sans-serif;
+$headings-font-weight: 500;
+$body-color: #252525;
+$headings-color: $crimson;

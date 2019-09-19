@@ -1,7 +1,103 @@
-.banner .nav li {
+// Header
+
+.header .nav li {
   @extend .nav-item;
 }
 
-.banner .nav a {
+.header .nav a {
   @extend .nav-link;
+}
+
+header.header {
+  width: 100%;
+  z-index: 20;
+  min-height: 200px;
+  background: rgba(255, 255, 255, .5);
+  position: relative;
+  a.brand {
+    padding: 1rem;
+    display: block;
+    //margin: 0 auto;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    //-webkit-filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1));      
+    //filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1));
+  }
+  .upper-nav {
+    //background: rgba(255, 255, 255, .5);
+    padding: 1rem 1rem 0 216px;
+    ul {
+      justify-content: flex-end;
+      a {
+        border: 1px solid $dark;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.75rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, .5);
+        color: $dark;
+        @include transition(all .15s ease-in-out);
+        &:hover {
+          background-color: $primary;
+          color: #FFF;
+        }
+      }
+      li:first-child a {
+        position: relative;
+        margin-right: 5px;
+        line-height: normal;
+        span {
+          display: none;
+          @include media-breakpoint-up(lg) {
+            display: inline-block;
+          }
+        }
+        &:before {
+          content: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23020508;%7D%0A%3C/style%3E%3Cpath class='st0' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M15.4,17.8C11.8,19.5,6,8.4,9.6,6.5L10.7,6 l1.7,3.4l-1,0.5c-1.1,0.6,1.2,5,2.3,4.5l1-0.5l1.8,3.4C16.5,17.3,15.4,17.8,15.4,17.8z'/%3E%3C/svg%3E");
+          
+          position: relative;
+          top: 2px;
+          display: inline-block;
+          @include media-breakpoint-up(lg) {
+            margin-right: 5px;
+          }
+        }
+        &:hover::before {
+          content: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cpath class='st0' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M15.4,17.8C11.8,19.5,6,8.4,9.6,6.5L10.7,6 l1.7,3.4l-1,0.5c-1.1,0.6,1.2,5,2.3,4.5l1-0.5l1.8,3.4C16.5,17.3,15.4,17.8,15.4,17.8z'/%3E%3C/svg%3E");
+        }
+      }
+    }
+  }
+  nav.navbar {
+    margin-top: 110px;
+    background: rgba(255, 255, 255, .5);
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .navbar-toggler {
+      margin-left: auto;
+
+    }
+    .navbar-nav {
+      margin-left: auto;
+      > li > a {
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        padding: 1rem;
+        @include transition(all .15s ease-in-out);
+        &:hover {
+          background-color: $primary;
+          color: #FFF;
+        }
+      }
+    }
+  }
 }

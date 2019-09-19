@@ -1,0 +1,8 @@
+// Homepage
+body.home {
+  header.header {
+    position: absolute;
+    top: 0;
+    @include admin-sticky-fix;
+  }
+}

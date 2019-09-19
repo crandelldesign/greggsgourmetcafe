@@ -1,0 +1,14 @@
+// Style Guide
+body.style-guide {
+    header.header {
+        position: static;
+    }
+    .content {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 1rem 2rem;
+    }
+    .btn {
+        margin-bottom: 5px;
+    }
+}

@@ -19,80 +19,97 @@
                     </div>
                     <div class="col-md-4">
                         <div class="color-swatch swatch2">
-                            Bright Green<br>
-                            #C4D600
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch3">
-                            Gray<br>
-                            #888B8D
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch4">
-                            Habitat Blue<br>
-                            #385988
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch5">
-                            Habitat Green<br>
-                            #43B02A
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch6">
-                            Orange<br>
-                            #FF671F
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch7">
-                            Brick<br>
-                            #A4343A
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="color-swatch swatch8">
-                            Daffodil<br>
-                            #FFF31E
+                            Greenpea<br>
+                            #245E36
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="color-swatch swatch9">
-                            Firebrick<br>
-                            #BF211E
+                            Space Cadet<br>
+                            #173753
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch3">
+                            Success<br>
+                            #28A745
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch4">
+                            Info<br>
+                            #6DAEDB
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch5">
+                            Warning<br>
+                            #FFC914
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch6">
+                            Danger<br>
+                            #ED2D38
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch7">
+                            Light<br>
+                            #E7EBED
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="color-swatch swatch8">
+                            Dark<br>
+                            #020508
                         </div>
                     </div>
                 </div>
                 <hr>
+
                 <h1>Buttons</h1>
 
-                <button class="btn btn-lg btn-primary">This is a large button</button>&nbsp;
-
-                <div class="visible-xs-block margin-bottom-10"></div>
-
-                <button class="btn btn-secondary">This is another smaller button</button>
-
-                <hr class="visible-xs-block">
+                <p>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-tertiary">Tertiary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-tertiary">Tertiary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </p>
 
             </div>
             <div class="col-sm-6">
                 <h1>Typography</h1>
 
                 <h1>Heading 1</h1>
-                <p class="details">Font: Roboto Regular / Bahama Blue #005596</p>
+                <p class="details">Font: Fira Sans Medium / Greenpea #245E36</p>
 
                 <hr>
 
                 <h2>Heading 2</h2>
-                <p class="details">Font: Roboto Bold / Apple #51b948</p>
+                <p class="details">Font: Fira Sans Medium / Greenpea #245E36</p>
 
                 <hr>
 
                 <h3>Heading 3</h3>
-                <p class="details">Font: Roboto Medium / Bahama Blue #005596</p>
+                <p class="details">Font: Fira Sans Medium / Greenpea #245E36</p>
 
                 <hr>
 
@@ -102,7 +119,7 @@
 
                 <p><a href="#">This is a link</a> - <a href="#" class="hover">This is a hover link</a></p>
 
-                <p class="details">Font: Crimson Text / Black #252525</p>
+                <p class="details">Font: Trebuchet MS / Black #252525</p>
             </div>
         </div>
         <div class="row">
@@ -149,12 +166,6 @@
                 </form>
             </div>
             <div class="col-md-6">
-                <div class="alert alert-primary" role="alert">
-                A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-secondary" role="alert">
-                A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
                 <div class="alert alert-success" role="alert">
                 A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                 </div>
