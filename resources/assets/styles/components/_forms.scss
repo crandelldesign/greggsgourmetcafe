@@ -17,3 +17,32 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+// Contact Us
+form.wpuf-theme-style {
+  ul.wpuf-form li {
+    padding: 0;
+    @extend .form-group;
+    &.has-error {
+      background-color: none;
+      .wpuf-error-msg {
+        @extend .invalid-feedback;
+        display: block;
+      }
+    }
+    .wpuf-label {
+      margin-bottom: 0;
+    }
+    .wpuf-fields input, .wpuf-fields textarea {
+      @extend .form-control;
+    }
+    .weforms_submit_btn {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+    .wpuf-errors {
+      @extend .alert;
+      @extend .alert-danger;
+    }
+  }
+}
